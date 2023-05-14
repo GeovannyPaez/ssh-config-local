@@ -1,4 +1,4 @@
-# Como configurar llave ss en cualquier Sistema Operativo
+# Como configurar llave SSH en cualquier Sistema Operativo
 ## Generar una nueva llave SSH: (Cualquier sistema operativo)
 
  ```bash 
@@ -8,13 +8,18 @@
 Comprobar proceso y agregarlo (Windows)
  ```bash 
 eval $(ssh-agent - s)
-
  ```
   ```bash 
 ssh-add ~/.ssh/id_rsa
-
  ```
-Comprobar proceso y agregarlo (Mac & Linux)
+ Comprobar proceso y agregarlo (Linux)
+ ```bash 
+eval "$(ssh-agent -s)"
+ ```
+  ```bash 
+ssh-add ~/.ssh/id_rsa
+ ```
+Comprobar proceso y agregarlo (Mac)
   ```bash 
 eval "$(ssh-agent -s)"
 
