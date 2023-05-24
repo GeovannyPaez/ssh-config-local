@@ -5,14 +5,8 @@
  $ ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
  ```
 
-Comprobar proceso y agregarlo (Windows)
- ```bash 
-eval $(ssh-agent - s)
- ```
-  ```bash 
-ssh-add ~/.ssh/id_rsa
- ```
- Comprobar proceso y agregarlo (Linux)
+
+ Comprobar proceso y agregarlo (Linux y windows)
  ```bash 
 eval "$(ssh-agent -s)"
  ```
